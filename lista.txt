@@ -9,13 +9,56 @@ Lista de Exercícios I
 
 1) Faça um programa que peça dois números inteiros e imprima a soma desses dois números
 
+numero1 = int(input("Digite um número: "))
+numero2 = int(input("Digite outro número: "))
+
+soma = numero1 + numero2
+
+print(f'A soma do primeiro número mais o segundo número foi de {soma}')
+
 2)Escreva um programa que leia um valor em metros e o exiba corvetido em milímetros
+
+valor = int(input('Digite um valor em metros para ser convertido em milímetros: '))
+
+milimetros = valor/1000
+
+print(f'O valor em metros é igual a {milimetros} milímetros')
+
 
 3) Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário. Calcule o total em segundos.
 
-4)Faça um programa que calcule o aumento de um salário. Ele deve soliciar o valor do salário e a porcentagem do aumento. Exiba o valor o aumento e do novo salário.
+dias = int(input('Digite a quantidade de dias: '))
+horas = int(input('Digite a quantidade de horas: '))
+minutos = int(input('Digite a quantidade de minutos: '))
+segundos = int(input('Digite a quantidade de segundos: '))
+
+total_segundos = dias * 24 * 60 * 60 + horas * 60 * 60 + minutos * 60 + segundos
+
+
+print(f'O total em segundos é:",  {total_segundos}')
+
+4)Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem do aumento. Exiba o valor o aumento e do novo salário.
+
+salario_atual = float(input("Digite o valor do salário atual: "))
+percentual_aumento = float(input("Digite a porcentagem do aumento: "))
+
+aumento = salario_atual * (percentual_aumento / 100)
+novo_salario = salario_atual + aumento
+
+
+print(f"O valor do aumento é de : R${aumento:.2f}")
+print(f"Seu salário agora é de: R${novo_salario:.2f}")
 
 5) Solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.
+
+preco_mercadoria = float(input("Digite o preço da mercadoria: "))
+percentual_desconto = float(input("Digite o percentual de desconto: "))
+
+valor_desconto = preco_mercadoria * (percentual_desconto / 100)
+preco_a_pagar = preco_mercadoria - valor_desconto
+
+print(f"O valor do desconto é: R${valor_desconto:.2f}")
+print(f"O preço a pagar é: R${preco_a_pagar:.2f}")
 
 6) Calcule o tempo de uma viagem de carro. Pergunte a distância a percorrer e a velocidade média esperada para a viagem.
 
