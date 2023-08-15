@@ -1,7 +1,7 @@
 Faculdade de Tecnologia do Estado de São Paulo - FATEC São José dos Campos
 Desenvolvimento de Software Multiplataformas
 
-Docente: Fernanco Masanori
+Docente: Fernando Masanori
 Discente: Glória Felix de Brito
 
 
@@ -9,10 +9,10 @@ Lista de Exercícios I
 
 1) Faça um programa que peça dois números inteiros e imprima a soma desses dois números
 
-numero1 = int(input("Digite um número: "))
-numero2 = int(input("Digite outro número: "))
+primeiro_numero = int(input("Digite um número: "))
+segundo_numero = int(input("Digite outro número: "))
 
-soma = numero1 + numero2
+soma = primeiro_numero + segundo_numero
 
 print(f'A soma do primeiro número mais o segundo número foi de {soma}')
 
