@@ -96,4 +96,17 @@ print(f'O preço a pagar pelo aluguel do carro é de R$ {total_pagamento:.2f}')
 
 10) Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigaros fumandos por dia e quantos anos ele já fumou. Considere que um fumante perde 10 minutos de vida a cada cigarro. Calcule quantos dias de vida um fumante perderá. Exiba o total de dias.
 
+cigarros_por_dia = int(input('Digite a quantidade de cigarros que você consome por dia: '))
+anos_fumando = int(input('Digite a quantos ano você fuma: '))
+
+total_cigarros = cigarros_por_dia * 365 * anos_fumando
+minutos_perdidos = total_cigarros * 10
+
+dias_perdidos = minutos_perdidos / (24 * 60)
+
+print(f"Você perderá {dias_perdidos:.2f} dias de vida.")
+
 11) Sabendo que str() converte valores numéricos para string. Calcule quantos dígitos há em 2 elevado a um milhão.
+
+x = len(str(2**1000000))
+print(f'2 elevado a 1 milhão tem {x} dígitos')
